@@ -1,0 +1,21 @@
+{
+  "asOf": "2026-09-04T05:21:22.613Z",
+  "source": "/api/status (Node os/process at capture — not IIS)",
+  "hostname": "Kellens-MacBook-Pro.local",
+  "platform": "darwin",
+  "release": "25.6.0",
+  "type": "Darwin",
+  "arch": "arm64",
+  "cpuModel": "Apple M5",
+  "cpuCount": 10,
+  "totalMemBytes": 34359738368,
+  "freeMemBytes": 885866496,
+  "usedMemPct": 97.42178916931152,
+  "processRssMB": 154.109375,
+  "processHeapMB": 22.219078063964844,
+  "processCpuPct": 2.133913346093614,
+  "hostUptimeSec": 153500,
+  "processUptimeSec": 5.829643167,
+  "node": "v24.20.0",
+  "runtime": "node"
+}

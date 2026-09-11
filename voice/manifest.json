@@ -1,0 +1,270 @@
+{
+  "generated": "2026-09-04",
+  "count": 66,
+  "clips": {
+    "chess-draw.mp3": {
+      "bytes": 29232,
+      "sha256": "6dfcad20652c638e"
+    },
+    "chess-lose.mp3": {
+      "bytes": 41040,
+      "sha256": "d9cc8917f2647a66"
+    },
+    "chess-start.mp3": {
+      "bytes": 50544,
+      "sha256": "074f776543fcd13a"
+    },
+    "chess-win.mp3": {
+      "bytes": 40176,
+      "sha256": "de286b50669aa261"
+    },
+    "en/chess-draw.mp3": {
+      "bytes": 17493,
+      "sha256": "4e53f15310c74bb9"
+    },
+    "en/chess-lose.mp3": {
+      "bytes": 25485,
+      "sha256": "17b7d6c4297a2771"
+    },
+    "en/chess-start.mp3": {
+      "bytes": 31629,
+      "sha256": "a4487eee2a526fa7"
+    },
+    "en/chess-win.mp3": {
+      "bytes": 35061,
+      "sha256": "fc75b1194ea91d0f"
+    },
+    "en/functions.mp3": {
+      "bytes": 68061,
+      "sha256": "7b4b2d55abf3b5e9"
+    },
+    "en/go-lose.mp3": {
+      "bytes": 24285,
+      "sha256": "910762cc43934d7e"
+    },
+    "en/go-start.mp3": {
+      "bytes": 28197,
+      "sha256": "bbcc01f68d7f6ccc"
+    },
+    "en/go-win.mp3": {
+      "bytes": 33885,
+      "sha256": "7d4a7545a64b98a8"
+    },
+    "en/hello-afternoon.mp3": {
+      "bytes": 44805,
+      "sha256": "f9b49f025f74ae33"
+    },
+    "en/hello-morning.mp3": {
+      "bytes": 49701,
+      "sha256": "e0e4529fb262a265"
+    },
+    "en/hello-night.mp3": {
+      "bytes": 51069,
+      "sha256": "9ae2f63f388bb3da"
+    },
+    "en/hello.mp3": {
+      "bytes": 67197,
+      "sha256": "62979f713d4d691f"
+    },
+    "en/matcha-intro.mp3": {
+      "bytes": 68133,
+      "sha256": "a12ea15aad8311e6"
+    },
+    "en/matcha-ok.mp3": {
+      "bytes": 46581,
+      "sha256": "dc1e1b33031438b1"
+    },
+    "en/matcha-pour.mp3": {
+      "bytes": 43005,
+      "sha256": "1e3992560e863745"
+    },
+    "en/matcha-scoop.mp3": {
+      "bytes": 42141,
+      "sha256": "73281f23bc531492"
+    },
+    "en/matcha-whisk.mp3": {
+      "bytes": 44661,
+      "sha256": "dd1d3598fbec4adb"
+    },
+    "en/numbers.mp3": {
+      "bytes": 72477,
+      "sha256": "b81e8b9ef663f3a3"
+    },
+    "en/page.mp3": {
+      "bytes": 56229,
+      "sha256": "9216d18c68b38876"
+    },
+    "en/purpose.mp3": {
+      "bytes": 53781,
+      "sha256": "61c65513663bdccf"
+    },
+    "en/sakura.mp3": {
+      "bytes": 52629,
+      "sha256": "3220b5961ad5da58"
+    },
+    "en/who.mp3": {
+      "bytes": 47925,
+      "sha256": "f453687a9bcdd0ed"
+    },
+    "functions.mp3": {
+      "bytes": 120960,
+      "sha256": "594cfa86b7e03b70"
+    },
+    "go-lose.mp3": {
+      "bytes": 33120,
+      "sha256": "5540896fc8f93f09"
+    },
+    "go-start.mp3": {
+      "bytes": 42912,
+      "sha256": "159ee8c6a821f7b5"
+    },
+    "go-win.mp3": {
+      "bytes": 43344,
+      "sha256": "fccc737940940b8f"
+    },
+    "hello-afternoon.mp3": {
+      "bytes": 57600,
+      "sha256": "7391dc3017b30ee9"
+    },
+    "hello-morning.mp3": {
+      "bytes": 60768,
+      "sha256": "b73b75a52943aeb0"
+    },
+    "hello-night.mp3": {
+      "bytes": 54288,
+      "sha256": "44f0ac8e1532d58c"
+    },
+    "hello.mp3": {
+      "bytes": 104256,
+      "sha256": "c78b611e7fca8553"
+    },
+    "matcha-intro.mp3": {
+      "bytes": 67680,
+      "sha256": "d5ed200c4fbf486a"
+    },
+    "matcha-ok.mp3": {
+      "bytes": 39888,
+      "sha256": "75532418ccdf943c"
+    },
+    "matcha-pour.mp3": {
+      "bytes": 49824,
+      "sha256": "522ae4f58628099d"
+    },
+    "matcha-scoop.mp3": {
+      "bytes": 36864,
+      "sha256": "98de159393b7ad51"
+    },
+    "matcha-whisk.mp3": {
+      "bytes": 36576,
+      "sha256": "c4cb23cc84e056de"
+    },
+    "numbers.mp3": {
+      "bytes": 134352,
+      "sha256": "7add9c93bc6dad70"
+    },
+    "page.mp3": {
+      "bytes": 127152,
+      "sha256": "8f691037a1b04041"
+    },
+    "purpose.mp3": {
+      "bytes": 99936,
+      "sha256": "9ccd06b39bd19d2e"
+    },
+    "sakura.mp3": {
+      "bytes": 120528,
+      "sha256": "b2875b71ad62c4ae"
+    },
+    "who.mp3": {
+      "bytes": 108432,
+      "sha256": "c4adf758fdbf5a97"
+    },
+    "zh/chess-draw.mp3": {
+      "bytes": 21168,
+      "sha256": "449d1edcd74e26a3"
+    },
+    "zh/chess-lose.mp3": {
+      "bytes": 29232,
+      "sha256": "28e580757eb5d45c"
+    },
+    "zh/chess-start.mp3": {
+      "bytes": 45216,
+      "sha256": "b437ea419f4def21"
+    },
+    "zh/chess-win.mp3": {
+      "bytes": 30672,
+      "sha256": "5264082f82ecab81"
+    },
+    "zh/functions.mp3": {
+      "bytes": 111456,
+      "sha256": "288759360f575c6d"
+    },
+    "zh/go-lose.mp3": {
+      "bytes": 23472,
+      "sha256": "b9240c03283121e6"
+    },
+    "zh/go-start.mp3": {
+      "bytes": 30816,
+      "sha256": "6b388887a87bb5d3"
+    },
+    "zh/go-win.mp3": {
+      "bytes": 34416,
+      "sha256": "2bb0d3192c44d1b5"
+    },
+    "zh/hello-afternoon.mp3": {
+      "bytes": 43632,
+      "sha256": "92366760e0f2a27a"
+    },
+    "zh/hello-morning.mp3": {
+      "bytes": 53280,
+      "sha256": "643372e0872ab049"
+    },
+    "zh/hello-night.mp3": {
+      "bytes": 53712,
+      "sha256": "0fa837cc06e15f92"
+    },
+    "zh/hello.mp3": {
+      "bytes": 72000,
+      "sha256": "2143e1a8d5977ad4"
+    },
+    "zh/matcha-intro.mp3": {
+      "bytes": 50400,
+      "sha256": "f002833604d319ac"
+    },
+    "zh/matcha-ok.mp3": {
+      "bytes": 25488,
+      "sha256": "82466690a151bfef"
+    },
+    "zh/matcha-pour.mp3": {
+      "bytes": 37008,
+      "sha256": "ad4eb4ba23d1a4b4"
+    },
+    "zh/matcha-scoop.mp3": {
+      "bytes": 35136,
+      "sha256": "55cb52a2d6a94563"
+    },
+    "zh/matcha-whisk.mp3": {
+      "bytes": 32688,
+      "sha256": "35a18d6096bc0098"
+    },
+    "zh/numbers.mp3": {
+      "bytes": 115056,
+      "sha256": "fd2bbc14866b8436"
+    },
+    "zh/page.mp3": {
+      "bytes": 99504,
+      "sha256": "dda638376e7c617f"
+    },
+    "zh/purpose.mp3": {
+      "bytes": 66672,
+      "sha256": "44e9d9507d46a7df"
+    },
+    "zh/sakura.mp3": {
+      "bytes": 98352,
+      "sha256": "1da1d0104d5d44d7"
+    },
+    "zh/who.mp3": {
+      "bytes": 70128,
+      "sha256": "958cd6a8c2789de0"
+    }
+  }
+}

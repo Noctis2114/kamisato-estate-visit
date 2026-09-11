@@ -1,0 +1,1 @@
+function e(e,t,n,r=6,i=4){e.save(),e.strokeStyle=`rgba(232,213,163,0.10)`,e.lineWidth=1;for(let i=1;i<r;i+=1){let a=Math.round(i/r*t)+.5;e.beginPath(),e.moveTo(a,0),e.lineTo(a,n),e.stroke()}for(let r=1;r<i;r+=1){let a=Math.round(r/i*n)+.5;e.beginPath(),e.moveTo(0,a),e.lineTo(t,a),e.stroke()}e.restore()}export{e as t};

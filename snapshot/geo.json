@@ -1,0 +1,14 @@
+{
+  "asOf": "2026-09-04T05:21:22.613Z",
+  "source": "https://ipwho.is/",
+  "ip": "2406:3003::",
+  "ipMasked": true,
+  "note": "Real captured response. The ip field is deliberately truncated to its network prefix before committing: this file ships inside every build, and the full address would travel with it. Nothing else here is altered.",
+  "city": "Singapore",
+  "region": "Central Singapore",
+  "country": "Singapore",
+  "country_code": "SG",
+  "latitude": 1.2899882,
+  "longitude": 103.850277,
+  "isp": "Starhub Ltd."
+}
