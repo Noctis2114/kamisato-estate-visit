@@ -1,0 +1,18 @@
+{
+  "asOf": "2026-09-15T23:01:13.066Z",
+  "files": [
+    "fx.json",
+    "stocks.json",
+    "geo.json",
+    "weather.json",
+    "status.json"
+  ],
+  "asOfByFile": {
+    "fx.json": "2026-09-15T23:01:13.066Z",
+    "stocks.json": "2026-09-15T23:01:13.066Z",
+    "geo.json": "2026-09-15T23:01:13.066Z",
+    "weather.json": "2026-09-15T23:01:13.066Z",
+    "status.json": "2026-09-15T23:01:13.066Z"
+  },
+  "note": "Real last responses. Runtime tries live fetch; on failure or ?offline=1 shows Cached · {date}. Translator is fail-closed offline (MyMemory is not bundled)."
+}

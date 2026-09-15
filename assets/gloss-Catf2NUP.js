@@ -1,0 +1,1 @@
+var e=` · `;function t(t){let n=t.indexOf(e);return n<0?t:t.slice(0,n)}function n(t){let n=t.indexOf(e);return n<0?``:t.slice(n+3)}export{t as n,n as t};

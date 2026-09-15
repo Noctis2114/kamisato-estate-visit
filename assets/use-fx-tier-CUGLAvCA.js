@@ -1,0 +1,1 @@
+import{r as e}from"./react-CbYonmBs.js";import{c as t,l as n}from"./lag-guard-CKnfA12X.js";var r=e();function i(){let[e,i]=(0,r.useState)(n);return(0,r.useEffect)(()=>(i(n()),t(i)),[]),e}export{i as t};

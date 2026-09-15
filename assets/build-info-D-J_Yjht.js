@@ -1,0 +1,1 @@
+var e={commit:`6fdd0f6`,dirty:!1,builtAt:`2026-09-15T22:59:20.679Z`,shape:`web`};function t(t=e){let n=typeof t.builtAt==`string`?t.builtAt.trim():``,r=n.length>=10?n.slice(0,10):``,i=typeof t.commit==`string`?t.commit.trim():``,a=i?`${i}${t.dirty?`+dirty`:``}`:``;return a&&r?`${a} · ${r}`:a||r||`dev`}export{t as n,e as t};
