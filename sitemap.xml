@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  One estate, one address.
+
+  The rooms are query strings on the same document — ?tea=1, ?courtyard=1,
+  ?heron=1, ?door=1 — and index.html gives every one of them a canonical link
+  back to the root. Listing them here as well would hand a crawler four URLs
+  that each tell it they are really the root, which is how a sitemap and a
+  canonical tag end up contradicting each other. So the root is the only entry,
+  and the manifest's shortcuts are what take a visitor straight to a room.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://noctis2114.github.io/kamisato-estate-visit/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>

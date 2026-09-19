@@ -1,0 +1,34 @@
+{
+  "id": "./",
+  "name": "Kamisato Ayaka · Estate",
+  "short_name": "Estate",
+  "description": "A quiet estate of rooms: the tea room, the koi courtyard, the heron's Bible, live clocks and host telemetry.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "categories": ["entertainment", "lifestyle", "utilities"],
+  "background_color": "#0d1a2e",
+  "theme_color": "#0d1a2e",
+  "lang": "en",
+  "icons": [
+    { "src": "./favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "./icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "./apple-touch-icon.png", "sizes": "180x180", "type": "image/png", "purpose": "any" }
+  ],
+  "screenshots": [
+    { "src": "./estate/overview-afternoon-1280w.jpg", "sizes": "1280x720", "type": "image/jpeg", "form_factor": "wide", "label": "The estate seen whole, in the afternoon" },
+    { "src": "./estate/courtyard-afternoon-1280w.jpg", "sizes": "1280x720", "type": "image/jpeg", "form_factor": "wide", "label": "The koi courtyard" },
+    { "src": "./estate/courtyard-afternoon-portrait.jpg", "sizes": "1215x2160", "type": "image/jpeg", "form_factor": "narrow", "label": "The koi courtyard on a phone" },
+    { "src": "./estate/heron-night-portrait.jpg", "sizes": "1215x2160", "type": "image/jpeg", "form_factor": "narrow", "label": "The White Heron Room at night" }
+  ],
+  "shortcuts": [
+    { "name": "Tea room", "short_name": "Tea", "url": "./?tea=1", "icons": [{ "src": "./icon-192.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "Koi courtyard", "short_name": "Courtyard", "url": "./?courtyard=1", "icons": [{ "src": "./icon-192.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "White Heron Room", "short_name": "Heron", "url": "./?heron=1", "icons": [{ "src": "./icon-192.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "The map", "short_name": "Map", "url": "./?map=1", "icons": [{ "src": "./icon-192.png", "sizes": "192x192", "type": "image/png" }] }
+  ]
+}
