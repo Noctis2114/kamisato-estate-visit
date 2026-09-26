@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; script-src &#39;self&#39; &#39;wasm-unsafe-eval&#39;; worker-src &#39;self&#39; blob:; style-src &#39;self&#39;; img-src &#39;self&#39; data: blob:; media-src &#39;self&#39; blob:; font-src &#39;self&#39;; connect-src &#39;self&#39; https://open.er-api.com https://api.frankfurter.dev https://api.open-meteo.com https://get.geojs.io https://ipwho.is https://en.wikipedia.org https://zh.wikipedia.org https://ja.wikipedia.org; object-src &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;">
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <!--
+      `interactive-widget=resizes-content`: when the software keyboard opens, the
+      layout viewport shrinks with it, so the bottom-anchored sheets (Ask, the
+      palette) rise above the keys instead of hiding behind them. One token, read
+      by Chrome and Android, ignored where it is unsupported. No listener: a
+      `visualViewport` resize handler fires continuously while the keyboard
+      animates, which is per-frame work the estate does not take on.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content" />
+    <!--
+      One theme colour, deliberately, and not a pair scoped to light and dark.
+      The estate has no light mode — `color-scheme` below says so and no
+      stylesheet in the tree asks `prefers-color-scheme` — so it is navy at every
+      hour and on every device. A light-scoped tag would paint pale chrome over a
+      navy page, which is the mismatch the split is meant to cure, not cause.
+    -->
+    <meta name="theme-color" content="#0d1a2e" />
+    <meta name="color-scheme" content="dark" />
+    <!--
+      iOS reads none of the manifest: added to the home screen it takes its name,
+      its chrome and its full-screen behaviour from these three. `black-translucent`
+      puts the painting under the status bar, which is what `viewport-fit=cover`
+      above is already asking for. The unprefixed spelling is the standard one
+      every other engine reads; Safari still wants the `apple-` name.
+    -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Estate" />
+    <meta
+      name="description"
+      content="Kamisato Estate — a quiet estate of rooms: the tea room, the koi courtyard, the heron's Bible, live clocks and host telemetry."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kamisato Ayaka · Estate" />
+    <meta
+      property="og:description"
+      content="A quiet estate of rooms: the tea room, the koi courtyard, the heron's Bible, live clocks and host telemetry."
+    />
+    <meta property="og:image" content="https://noctis2114.github.io/kamisato-estate-visit/estate/courtyard-afternoon-1280w.jpg" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
+    <meta property="og:image:alt" content="The koi courtyard of the Kamisato estate in the afternoon." />
+    <meta property="og:url" content="https://noctis2114.github.io/kamisato-estate-visit/" />
+    <meta property="og:site_name" content="Kamisato Ayaka · Estate" />
+    <meta property="og:locale" content="en_US" />
+    <!--
+      The Twitter half, written out rather than left to fall back.
+
+      `summary_large_image` promises a picture, and a card that names no image
+      of its own is rendered blank by more than one reader rather than quietly
+      borrowing the Open Graph one. The three `twitter:` lines below are the
+      same estate, the same sentence and the same painting as above; they exist
+      because a reader that only speaks Twitter's dialect has nothing to read
+      otherwise. The absolute URLs are deliberate: a share card is fetched by a
+      machine that has no page to resolve a relative path against.
+    -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kamisato Ayaka · Estate" />
+    <meta
+      name="twitter:description"
+      content="A quiet estate of rooms: the tea room, the koi courtyard, the heron's Bible, live clocks and host telemetry."
+    />
+    <meta name="twitter:image" content="https://noctis2114.github.io/kamisato-estate-visit/estate/courtyard-afternoon-1280w.jpg" />
+    <meta name="twitter:image:alt" content="The koi courtyard of the Kamisato estate in the afternoon." />
+    <!--
+      One address for the whole estate.
+
+      Every room is a query string on the same document — `?tea=1`, `?card=…`,
+      `?view=lab` — so a crawler that follows the estate's own links finds a
+      hundred URLs serving one page and files them as duplicates of each other.
+      The canonical link says which one of them is the page.
+    -->
+    <link rel="canonical" href="https://noctis2114.github.io/kamisato-estate-visit/" />
+    <!--
+      The two faces every first paint sets in: the Latin serif of the door and
+      the deck's sans. Preloaded rather than inlined as `@font-face` rules: the
+      built page carries `script-src 'self'; style-src 'self'`, so an inline
+      `<style>` would be refused by the browser, and these two links already put
+      both woff2 in flight at parse time, which is what inlining was for.
+
+      The front door's painting is not preloaded for the same reason. Which
+      painting it is depends on the visitor's own clock — the gate at morning,
+      afternoon, evening or night — and only a script can read that; a fixed
+      choice would fetch the wrong scene three times in four and put a quarter of
+      a megabyte of waste on the critical path. It is fetched by `Painting` as
+      soon as the bundle runs, over its blurred placeholder.
+    -->
+    <link rel="preload" href="./fonts/noto-serif-jp-latin-400.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./fonts/inter-latin-400.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="./fonts.css" />
+    <!--
+      The same name the manifest carries. An installed estate takes its name
+      from `manifest.webmanifest` ("Kamisato Ayaka · Estate") and the tab took
+      its own from here ("… Estate IIS"), so the install prompt and the tab
+      behind it named two different things. IIS is the host this landing began
+      as, not what a visitor installed.
+    -->
+    <title>Kamisato Ayaka · Estate</title>
+    <script type="module" crossorigin src="./assets/index-CjsayjPt.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-hePW80VL.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-D0Ec-185.js">
+    <link rel="modulepreload" crossorigin href="./assets/lag-guard-yIpEkFVY.js">
+    <link rel="modulepreload" crossorigin href="./assets/use-fx-tier-StgUkCqr.js">
+    <link rel="modulepreload" crossorigin href="./assets/storage-DYFzANnb.js">
+    <link rel="modulepreload" crossorigin href="./assets/prefs-BPoxcaQn.js">
+    <link rel="modulepreload" crossorigin href="./assets/scores-BEDcyZYL.js">
+    <link rel="modulepreload" crossorigin href="./assets/deck-lang-6TOyiWud.js">
+    <link rel="modulepreload" crossorigin href="./assets/build-info-DG4cfbO5.js">
+    <link rel="modulepreload" crossorigin href="./assets/tea-seal-COZ5mExb.js">
+    <link rel="modulepreload" crossorigin href="./assets/speak-CEiZPNtK.js">
+    <link rel="modulepreload" crossorigin href="./assets/chunk-error-DrufujkD.js">
+    <link rel="modulepreload" crossorigin href="./assets/error-boundary-Ci85kkn5.js">
+    <link rel="modulepreload" crossorigin href="./assets/preload-helper-HclGiUj8.js">
+    <link rel="modulepreload" crossorigin href="./assets/deck-Do8w3kb8.js">
+    <link rel="modulepreload" crossorigin href="./assets/live-AzblpAgK.js">
+    <link rel="modulepreload" crossorigin href="./assets/door-transition-QiEiS0Bj.js">
+    <link rel="modulepreload" crossorigin href="./assets/clipboard-Cx3oaGGb.js">
+    <link rel="modulepreload" crossorigin href="./assets/tool-lang-B5a3eNwf.js">
+    <link rel="modulepreload" crossorigin href="./assets/ui-DolqNgz2.js">
+    <link rel="modulepreload" crossorigin href="./assets/perf-trace-lIYLa8MR.js">
+    <link rel="stylesheet" crossorigin href="./assets/ui-mr6J6RWc.css">
+    <link rel="stylesheet" crossorigin href="./assets/index-D_-3VYJc.css">
+    <meta name="ayaka-build" content="6c58e7b 2026-09-26T13:08:41.027Z web">
+  </head>
+  <body>
+    <!--
+      The pre-boot garden: six CSS petals that fall from the first paint, before
+      the entry bundle has booted. Rules live in `fonts.css` (the CSP forbids an
+      inline <style>), and `use-petals.ts` removes this node the moment a real
+      petal frame is on the canvas.
+    -->
+    <div id="preboot-petals" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div id="root"></div>
+    <noscript>This IIS landing needs JavaScript for live telemetry. The host is still serving this document.</noscript>
+  </body>
+</html>

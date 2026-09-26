@@ -1,0 +1,1 @@
+import{t as e}from"./react-D0Ec-185.js";var t=e(),n={en:[`Pause`,`Paused · Resume`],zh:[`暂停`,`已暂停 · 继续`],ja:[`一時停止`,`停止中 · 再開`]};function r({lang:e,paused:r,onClick:i,disabled:a=!1,title:o}){return(0,t.jsx)(`button`,{type:`button`,className:`settings-chip${r?` is-on`:``}`,"data-game-pause":``,"aria-pressed":r,disabled:a&&!r,onClick:i,title:o,children:n[e][+!!r]})}export{r as t};

@@ -1,0 +1,1 @@
+import{i as e}from"./react-D0Ec-185.js";var t=e();function n(e,n=!0){let r=(0,t.useRef)(e);(0,t.useEffect)(()=>{r.current=e},[e]),(0,t.useEffect)(()=>{if(!n)return;let e=0,t=requestAnimationFrame(()=>{e=requestAnimationFrame(()=>r.current?.())});return()=>{cancelAnimationFrame(t),cancelAnimationFrame(e)}},[n])}export{n as t};
