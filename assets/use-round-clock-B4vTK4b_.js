@@ -1,0 +1,1 @@
+function e(e){let t=Math.floor(Math.max(0,e)/100),n=Math.floor(t/600),r=Math.floor(t%600/10);return`${n}:${String(r).padStart(2,`0`)}.${t%10}`}export{e as t};

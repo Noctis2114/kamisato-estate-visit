@@ -1,0 +1,1 @@
+import{i as e,t}from"./react-D0Ec-185.js";var n=e(),r=t(),i=(0,n.memo)(function({icon:e,fallback:t,className:n}){return e?e.kind===`image`?(0,r.jsx)(`img`,{className:n?`n-icon-img ${n}`:`n-icon-img`,src:e.src,alt:``,draggable:!1}):(0,r.jsx)(`span`,{className:n,"aria-hidden":`true`,children:e.glyph}):(0,r.jsx)(r.Fragment,{children:t??null})});export{i as t};

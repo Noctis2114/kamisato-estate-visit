@@ -1,0 +1,1 @@
+var e=(e,t,n)=>({en:e,zh:t,ja:n}),t={part:e(`Not run — not an estate action I can take:`,`未执行——这不是我能执行的庄园操作：`,`実行せず——実行できる屋敷の操作ではありません：`),whole:e(`Nothing ran — this plan has a step I cannot take:`,`什么都没有执行——这个计划中有一步无法执行：`,`何も実行していません——この計画には実行できない手順があります：`)},n=(e,n,r=!1)=>`${t[r?`whole`:`part`][n]} ${e.map(e=>`“${e}”`).join(n===`en`?`, `:`、`)}`;export{n as t};

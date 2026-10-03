@@ -1,0 +1,1 @@
+var e=typeof location<`u`&&location.search.includes(`perfTrace=1`);function t(t){if(!e)return;let n=window,r=n.__ayakaTrace??=[];r.length<400&&r.push(`${Math.round(performance.now())} ${t}`)}export{t};

@@ -1,0 +1,1 @@
+import{i as e}from"./react-D0Ec-185.js";import{n as t}from"./wake-lock-ChQxX5-y.js";var n=e();function r(e){(0,n.useEffect)(()=>{if(e)return t().hold()},[e])}export{r as t};

@@ -1,0 +1,8 @@
+{
+  "asOf": "2026-10-03T19:18:08.254Z",
+  "source": "https://api.open-meteo.com/v1/forecast",
+  "celsius": 27.7,
+  "code": 0,
+  "latitude": 1.29,
+  "longitude": 103.85
+}
