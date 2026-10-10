@@ -1,0 +1,1 @@
+import{A as e}from"./storage-DIEhLhtr.js";var t=`ayaka_sync`;function n(){try{return localStorage.getItem(t)!==`off`}catch{return!0}}function r(n){let r=!1;try{n?localStorage.removeItem(t):localStorage.setItem(t,`off`),r=!0}catch{r=!1}return e(`local`,t,n?null:`off`,r)}export{r as n,n as t};

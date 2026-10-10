@@ -1,0 +1,30 @@
+{
+  "usedCjkCharacters": 4401,
+  "missingUsedCjk": [],
+  "fonts": [
+    {
+      "file": "lora-latin-variable.woff2",
+      "bytes": 85096,
+      "sha256": "7c514f026f03de1b0fc344c0c0f0df141fcf16b6f9ab672db191908ba740dab6",
+      "upstream": "https://raw.githubusercontent.com/google/fonts/186331d77cc99caaa9c3b52391fd2b519c9e1ee8/ofl/lora/Lora%5Bwght%5D.ttf",
+      "upstreamSha256": "822a6621ccbe8d97d20ac88c1c41f5615c9c2c202eaa75f272cd452aac6475a7",
+      "glyphCoverage": 778
+    },
+    {
+      "file": "klee-one-japanese-600.woff2",
+      "bytes": 1331960,
+      "sha256": "7395a110ece3e311f85180d3d8a77598f9d24aac468203c6d15680742e8584fc",
+      "upstream": "https://raw.githubusercontent.com/google/fonts/130fcfb0ff422fec96b335616b2ca99f91914792/ofl/kleeone/KleeOne-SemiBold.ttf",
+      "upstreamSha256": "b031ec426c23ca1143ef1f7d58bee7a79efe119ed654152f121c922202b303fd",
+      "glyphCoverage": 3471
+    },
+    {
+      "file": "lxgw-wenkai-screen-400.woff2",
+      "bytes": 1258548,
+      "sha256": "f3ca7d2e07cb8b233c9bbd11396035f3061ca7ae55973cb20f80f96ffe198868",
+      "upstream": "https://github.com/lxgw/LxgwWenKai-Screen/releases/download/v1.522/LXGWWenKaiScreen.ttf",
+      "upstreamSha256": "cd1a6fa39c4ea42fd8f4e289945789b0e510cf7016435640f8893cdad9b220f3",
+      "glyphCoverage": 4682
+    }
+  ]
+}

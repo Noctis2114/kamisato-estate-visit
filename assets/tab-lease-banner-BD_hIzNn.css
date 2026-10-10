@@ -1,0 +1,1 @@
+.tab-reader{left:50%;bottom:max(16px, env(safe-area-inset-bottom));z-index:80;box-sizing:border-box;border-radius:16px;width:min(520px,100% - 32px);position:fixed;transform:translate(-50%)}

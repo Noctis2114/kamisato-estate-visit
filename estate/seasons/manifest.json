@@ -1,0 +1,18 @@
+{
+  "tile": 192,
+  "width": 1536,
+  "height": 1920,
+  "kinds": [
+    "sakura",
+    "jacaranda",
+    "frangipani",
+    "maple",
+    "ginkgo",
+    "raintree",
+    "snow",
+    "star",
+    "olive",
+    "flame"
+  ],
+  "frames": 8
+}

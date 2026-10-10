@@ -1,0 +1,14 @@
+# Kamisato Ayaka · Estate — https://noctis2114.github.io/kamisato-estate-visit/
+#
+# The whole estate is one document; every room is a query string on it, and the
+# canonical link in index.html names the root as the page. Crawling is welcome
+# everywhere: there is nothing here that is not meant to be read.
+#
+# A host serves robots.txt from its own root, so on GitHub Pages this file is
+# read only if the estate is ever given a domain of its own. It is written out
+# anyway, so that the day it matters nothing has to be remembered.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://noctis2114.github.io/kamisato-estate-visit/sitemap.xml

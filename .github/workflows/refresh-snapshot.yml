@@ -1,0 +1,64 @@
+# Keep the published capture fresh without a server and without a secret.
+#
+# This site is static: there is no /api behind it, so the market and rate cards
+# read ./snapshot/*.json and are exactly as old as the last deploy. This workflow
+# runs inside the published repository, asks the same public upstreams the estate
+# itself asks, rewrites those two files in the shape the app already reads, and
+# commits. GitHub Pages rebuilds on the commit, so the deck goes from days stale
+# to a quarter of an hour.
+#
+# No secret is involved anywhere. Every upstream is keyless and public, and the
+# only credential is GITHUB_TOKEN, which GitHub mints for the run and scopes to
+# this repository alone — hence `permissions: contents: write` and nothing else.
+# The estate's rule that nothing is ever invented holds here too: the script
+# leaves a file untouched rather than writing a figure it did not receive.
+#
+# Two things worth knowing about schedules. GitHub runs cron on a best-effort
+# basis and a run can be five to twenty minutes late, so "every 15 minutes" is
+# the floor of the site's staleness, not a guarantee. And GitHub disables the
+# schedule on a repository with no pushes for 60 days; every deploy of the estate
+# force-pushes this repository, which re-arms it.
+name: Refresh the published snapshot
+
+on:
+  schedule:
+    # Every quarter hour across the US session in both UTC offsets EST/EDT put it
+    # in (13:30-20:00 UTC in summer, 14:30-21:00 in winter), plus the runs just
+    # after the close so the last capture of the day is the closing one.
+    - cron: '*/15 13-21 * * 1-5'
+  workflow_dispatch:
+
+# One run at a time. Two runs committing to the same branch is a push that loses
+# a race, and the losing one would hold a partly-written capture.
+concurrency:
+  group: refresh-snapshot
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Ask the upstreams and rewrite the capture
+        run: node tools/refresh-snapshot.mjs
+
+      - name: Commit only if the figures moved
+        run: |
+          if [ -z "$(git status --porcelain snapshot)" ]; then
+            echo "nothing changed — no commit"
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add snapshot
+          git commit -m "Refresh the published snapshot ($(date -u '+%Y-%m-%dT%H:%MZ'))"
+          git push
