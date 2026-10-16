@@ -1,0 +1,1 @@
+function e(e){if(!Number.isFinite(e)||e<-90||e>90)throw Error(`Invalid Lent solar altitude`);let t=(t,n)=>{let r=Math.max(0,Math.min(1,(e-t)/(n-t)));return r*r*(3-2*r)},n=t(-8,5),r=t(0,6);return{ambient:[.045+.255*n,.06+.26*n,.095+.275*n],direct:[.66*r,.6*r,.51*r]}}export{e as t};

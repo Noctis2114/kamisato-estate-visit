@@ -1,0 +1,1 @@
+function e(e,t){if(e.length<=t)return e;let n=Array.from(e);return n.length>t?n.slice(0,t).join(``):e}export{e as t};

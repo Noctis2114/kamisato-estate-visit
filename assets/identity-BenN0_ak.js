@@ -1,0 +1,1 @@
+var e=(e,t,n)=>t===`modern`&&n===`gate`&&/^\.\/estate\/seasons\/gate-epiphany-(morning|afternoon|evening|night)\.webp$/.test(e);export{e as t};

@@ -1,0 +1,2 @@
+/* Automatic visitor collection has no in-page controls. */
+#estate-usage-analytics-control { display: none; }

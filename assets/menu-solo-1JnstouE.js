@@ -1,0 +1,1 @@
+var e=null;function t(t){let n={close:t},r=e;return e=n,r&&r.close(),()=>{e===n&&(e=null)}}export{t};

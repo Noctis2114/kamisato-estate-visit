@@ -1,0 +1,1 @@
+function e(e){return new Promise(t=>{let n;try{n=new MessageChannel}catch{t(null);return}let r=!1,i=e=>{if(!r){r=!0,clearTimeout(a);try{n.port1.close()}catch{}t(e)}},a=setTimeout(()=>i(null),1500);n.port1.onmessage=e=>i(e.data);try{e.postMessage({type:`BUILD`},[n.port2])}catch{i(null)}})}export{e as t};
