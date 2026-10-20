@@ -1,0 +1,1 @@
+import{i as e}from"./react-D0Ec-185.js";var t=e();function n(e){let n=(0,t.useRef)(null);return{onPointerDown:e=>{n.current=e.target},onClick:t=>{let i=r(n.current,t.target,t.currentTarget);n.current=null,i&&e()}}}function r(e,t,n){return e===n&&t===n}export{n as t};

@@ -1,0 +1,1 @@
+var e=`EstateMoneyContext111`;function t(t){return!!t?.props?.[e]}function n(e,n){let r=new Set,i=e.pages[n];for(;i&&!r.has(i.id);){if(r.add(i.id),t(i))return!0;i=i.parent?e.pages[i.parent]:void 0}return!1}export{n,t as r,e as t};

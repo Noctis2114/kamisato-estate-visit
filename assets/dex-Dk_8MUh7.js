@@ -1,0 +1,1 @@
+import{a as e}from"./game-BVk9tWiY.js";export{e as KoiDex};

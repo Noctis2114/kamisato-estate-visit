@@ -1,0 +1,1 @@
+function e(){return{BASE_URL:`./`,DEV:!1,MODE:`production`,PROD:!0,SSR:!1}.VITE_ESTATE_EDITION}function t(){return typeof navigator<`u`&&`gpu`in navigator&&navigator.gpu!=null}function n(t=e()){return t!==`htm`}export{t as n,e as r,n as t};

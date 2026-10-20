@@ -1,0 +1,54 @@
+{
+  "id": "./",
+  "name": "Kamisato Ayaka · Estate",
+  "short_name": "Estate",
+  "description": "A quiet estate of rooms: the tea room, the koi courtyard, the heron's Bible, live clocks and host telemetry.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "orientation": "any",
+  "categories": ["entertainment", "lifestyle", "utilities"],
+  "background_color": "#0d1a2e",
+  "theme_color": "#0d1a2e",
+  "lang": "en",
+  "icons": [
+    { "src": "./favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "./icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "./apple-touch-icon.png", "sizes": "180x180", "type": "image/png", "purpose": "any" }
+  ],
+  "screenshots": [
+    { "src": "./estate/overview-afternoon-1280w.jpg", "sizes": "1280x720", "type": "image/jpeg", "form_factor": "wide", "label": "The estate seen whole, in the afternoon" },
+    { "src": "./estate/courtyard-afternoon-1280w.jpg", "sizes": "1280x720", "type": "image/jpeg", "form_factor": "wide", "label": "The koi courtyard" },
+    { "src": "./estate/courtyard-afternoon-portrait.jpg", "sizes": "1215x2160", "type": "image/jpeg", "form_factor": "narrow", "label": "The koi courtyard on a phone" },
+    { "src": "./estate/heron-night-portrait.jpg", "sizes": "1215x2160", "type": "image/jpeg", "form_factor": "narrow", "label": "The White Heron Room at night" }
+  ],
+  "shortcuts": [
+    { "name": "Today", "short_name": "Today", "description": "The hall's home deck: the day at a glance", "url": "./?home=1", "icons": [{ "src": "./icon-192.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "Koi pond", "short_name": "Koi", "description": "Straight to the koi pond in the courtyard", "url": "./?courtyard=1&game=koi", "icons": [{ "src": "./icon-192.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "Quick capture", "short_name": "Capture", "description": "A line for the notebook", "url": "./?card=continue", "icons": [{ "src": "./icon-192.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "Tea room", "short_name": "Tea", "url": "./?tea=1", "icons": [{ "src": "./icon-192.png", "sizes": "192x192", "type": "image/png" }] }
+  ],
+  "share_target": {
+    "action": "./",
+    "method": "GET",
+    "params": { "title": "title", "text": "text", "url": "url" }
+  },
+  "launch_handler": { "client_mode": ["navigate-existing", "auto"] },
+  "file_handlers": [
+    {
+      "action": "./",
+      "accept": {
+        "application/json": [".json"],
+        "application/gzip": [".gz"],
+        "text/markdown": [".md", ".markdown"]
+      },
+      "launch_type": "single-client"
+    }
+  ],
+  "protocol_handlers": [
+    { "protocol": "web+estate", "url": "./?protocol=%s" }
+  ]
+}

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+<defs>
+ <radialGradient id="room"><stop stop-color="#24564b"/><stop offset="1" stop-color="#081a1b"/></radialGradient>
+ <linearGradient id="brass" x2=".7" y2="1"><stop stop-color="#ffe8b0"/><stop offset=".35" stop-color="#bb934e"/><stop offset=".7" stop-color="#805324"/><stop offset="1" stop-color="#dfbd79"/></linearGradient>
+ <linearGradient id="wood" x2="0" y2="1"><stop stop-color="#453128"/><stop offset="1" stop-color="#201a19"/></linearGradient>
+ <linearGradient id="reel" x2="0" y2="1"><stop stop-color="#b4aa8d"/><stop offset=".38" stop-color="#fff5d9"/><stop offset=".65" stop-color="#f2e7c9"/><stop offset="1" stop-color="#aaa186"/></linearGradient>
+ <radialGradient id="light"><stop stop-color="#eacf8a" stop-opacity=".24"/><stop offset="1" stop-color="#eacf8a" stop-opacity="0"/></radialGradient>
+</defs>
+<path fill="url(#room)" d="M0 0h960v540H0z"/>
+<ellipse cx="480" cy="250" rx="470" ry="265" fill="url(#light)"/>
+<g stroke="#d0ad63" opacity=".15" fill="none"><path d="M80 0v540M145 0v540M815 0v540M880 0v540M0 100h960M0 410h960"/><circle cx="480" cy="270" r="247"/><circle cx="480" cy="270" r="259"/></g>
+<ellipse cx="480" cy="460" rx="302" ry="36" fill="#061010" opacity=".7"/>
+<rect x="206" y="75" width="548" height="390" rx="40" fill="url(#brass)"/>
+<rect x="218" y="87" width="524" height="366" rx="32" fill="url(#wood)" stroke="#f4d997" stroke-opacity=".35"/>
+<path d="M257 157h446" stroke="#d8b978" stroke-width="2"/>
+<text x="480" y="137" text-anchor="middle" fill="#f4dcaa" font-family="Georgia,serif" font-size="28" letter-spacing="8">ESTATE SLOTS</text>
+<rect x="254" y="180" width="452" height="202" rx="18" fill="#090f10" stroke="#bc9855" stroke-width="4"/>
+<g fill="url(#reel)"><rect x="264" y="190" width="137" height="182" rx="10"/><rect x="412" y="190" width="137" height="182" rx="10"/><rect x="560" y="190" width="136" height="182" rx="10"/></g>
+<g transform="translate(332 281)" fill="#ba5468" stroke="#863649" stroke-width="2"><ellipse cy="-24" rx="15" ry="26"/><ellipse cy="-24" rx="15" ry="26" transform="rotate(72)"/><ellipse cy="-24" rx="15" ry="26" transform="rotate(144)"/><ellipse cy="-24" rx="15" ry="26" transform="rotate(216)"/><ellipse cy="-24" rx="15" ry="26" transform="rotate(288)"/><circle r="10" fill="#e9bb54"/></g>
+<g transform="translate(480 280)"><path d="M-48 30A57 57 0 0 1 48 30L0 48Z" fill="#42796c" stroke="#224e46" stroke-width="3"/><g stroke="#e0c886" stroke-width="2"><path d="M0 48L-43 12M0 48L-27-4M0 48V-16M0 48L27-4M0 48L43 12"/></g><circle cy="48" r="5" fill="#b18b49"/></g>
+<g transform="translate(628 281)"><circle r="45" fill="#ddbd71" stroke="#8b682f" stroke-width="3"/><path d="M13-42A39 39 0 0 0 37 22A45 45 0 0 1 13-42" fill="#f5e6b8"/><path d="M-29 18c16-8 28-8 45 0M-22 28c12-6 24-6 36 0" fill="none" stroke="#b49450" stroke-width="3"/></g>
+<path d="M235 278l15-8v16zm490 0-15-8v16z" fill="#f1cc75"/>
+<rect x="407" y="406" width="146" height="24" rx="12" fill="#936b32" stroke="#d9b776"/>
+<path d="M264 420h111m211 0h109" stroke="#c9a768" opacity=".55"/>
+<g transform="translate(770 400)" stroke="#d8bf85" stroke-width="4"><ellipse rx="40" ry="13" fill="#243b36"/><path d="M-40 0v13a40 13 0 0 0 80 0V0" fill="#304e45"/><ellipse cy="-7" rx="40" ry="13" fill="#456b59"/><ellipse cy="-7" rx="28" ry="8" fill="none"/></g>
+<text x="480" y="510" text-anchor="middle" fill="#d7c69e" font-family="Arial,sans-serif" font-size="16" letter-spacing="4">FREE VIRTUAL CHIPS · ONE PAYLINE</text>
+</svg>

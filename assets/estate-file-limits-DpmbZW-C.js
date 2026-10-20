@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-hePW80VL.js";var t=e({ESTATE_FILE_MAX:()=>i,ESTATE_JSON_MAX:()=>n,estateFileLimit:()=>r,estateJsonFits:()=>a}),n=134217728;function r(e){return Math.ceil((e+16)/3)*4+1024}var i=r(n);function a(e,t=n){return new Blob([e]).size<=t}export{t as i,n,a as r,i as t};
