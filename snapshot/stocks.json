@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-10-20T20:52:21.390Z",
+  "asOf": "2026-10-20T23:31:38.186Z",
   "source": "Yahoo Finance 1-minute bars, refreshed on the published site by tools/refresh-snapshot.mjs",
   "symbols": [
     {
@@ -313,7 +313,7 @@
         373.364990234375,
         373.625,
         373.7099914550781,
-        373.7300109863281,
+        373.7749938964844,
         373.7099914550781
       ],
       "marketState": "POST"
