@@ -120,7 +120,7 @@ var ayakaGateArt = (function () {
     // readEstateStylePrefs + resolveEstateSeasons.
     if (saved.scenery === 'original') {
       var base = './estate/gate-' + scene
-      return { href: base + '.webp', srcset: base + '-1280w.webp 1280w, ' + base + '-1920w.webp 1920w, ' + base + '.webp 3840w', sizes: '100vw' }
+      return { href: base + '.webp', srcset: base + '-1280w.webp 1280w, ' + base + '-1920w.webp 1920w, ' + base + '.webp 3840w', sizes: '(min-aspect-ratio: 16/9) 100vw, 177.777778vh' }
     }
     var season = pick(or(q.get('style-season'), saved.season), ['auto'].concat(SEASONS), 'auto')
     var regionStyle = pick(or(q.get('style-region'), saved.region), ['auto'].concat(REGIONS), 'auto')
