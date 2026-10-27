@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-10-27T18:30:53.767Z",
+  "asOf": "2026-10-27T22:37:29.270Z",
   "source": "open.er-api.com/v6/latest/SGD + api.frankfurter.dev previous weekday (refreshed on the published site by tools/refresh-snapshot.mjs)",
   "latest": {
     "result": "success",
@@ -8,8 +8,8 @@
     "terms_of_use": "https://www.exchangerate-api.com/terms",
     "time_last_update_unix": 1793059351,
     "time_last_update_utc": "Tue, 27 Oct 2026 00:02:31 +0000",
-    "time_next_update_unix": 1793147341,
-    "time_next_update_utc": "Wed, 28 Oct 2026 00:29:01 +0000",
+    "time_next_update_unix": 1793147661,
+    "time_next_update_utc": "Wed, 28 Oct 2026 00:34:21 +0000",
     "time_eol_unix": 0,
     "base_code": "SGD",
     "rates": {
