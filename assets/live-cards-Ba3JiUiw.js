@@ -1,1 +1,0 @@
-import{j as e}from"./storage-CSfy7ei8.js";var t=`ayaka_live_cards`;function n(){try{return localStorage.getItem(t)!==`off`}catch{return!0}}function r(n){let r=!1;try{n?localStorage.removeItem(t):localStorage.setItem(t,`off`),r=!0}catch{r=!1}let i=e(`local`,t,n?null:`off`,r);try{window.dispatchEvent(new CustomEvent(`ayaka:live-cards`))}catch{}return i}export{r as n,n as t};
