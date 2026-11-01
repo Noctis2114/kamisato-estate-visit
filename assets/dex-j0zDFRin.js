@@ -1,0 +1,1 @@
+import{a as e}from"./game-FUCy--dO.js";export{e as KoiDex};
