@@ -1,0 +1,1 @@
+import{n as e}from"./library-readable-COmE-0o0.js";import{M as t}from"./paste-lines-C7tihBnw.js";function n(n,r,i){let a=e(n,i);return a.pages[r]?t(a,r):``}export{n as t};
