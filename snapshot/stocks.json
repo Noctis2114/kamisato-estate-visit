@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-11-14T00:58:56.466Z",
-  "source": "Yahoo Finance 1-minute bars, refreshed on the published site by tools/refresh-snapshot.mjs",
+  "asOf": "2026-11-15T08:17:25.271Z",
+  "source": "Yahoo Finance 1-minute bars, captured direct from query1.finance.yahoo.com",
   "symbols": [
     {
       "sym": "AAPL",
@@ -79,7 +79,7 @@
         356.3999938964844,
         356.2699890136719
       ],
-      "marketState": "POST"
+      "marketState": "CLOSED"
     },
     {
       "sym": "NVDA",
@@ -141,7 +141,7 @@
         162.125,
         161.9550018310547,
         161.82000732421875,
-        162.22999572753906,
+        162.22500610351562,
         162.22500610351562,
         162.28500366210938,
         162.27499389648438,
@@ -158,7 +158,7 @@
         162.82009887695312,
         162.85000610351562
       ],
-      "marketState": "POST"
+      "marketState": "CLOSED"
     },
     {
       "sym": "MSFT",
@@ -237,7 +237,7 @@
         524.3099975585938,
         523.8800048828125
       ],
-      "marketState": "POST"
+      "marketState": "CLOSED"
     },
     {
       "sym": "TSLA",
@@ -316,8 +316,8 @@
         390.1401062011719,
         390.2200012207031
       ],
-      "marketState": "POST"
+      "marketState": "CLOSED"
     }
   ],
-  "marketState": "POST"
+  "marketState": "CLOSED"
 }
